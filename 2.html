@@ -1,30 +1,73 @@
 <!doctype html>
 <html>
 <head>
-<title>WEB1-운동</title>
-<meta charset="utf-8">
+  <title>WEB1-운동</title>
+  <meta charset="utf-8">
+  <style>
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      border-bottom:1px solid gray;
+      margin: 0;
+      padding:20px;
+    }
+    ol {
+      border-right: 1px solid gray;
+      width: 100px;
+      margin: 0px;
+      padding: 20px;
+    }
+    body {
+      margin: 0px;
+    }
+    #grid{
+      display:grid;
+      grid-template-columns: 150px 1fr;
+    }
+    #gird ol{
+      padding-left: 25px;
+    }
+    #article {
+      padding : 25px;
+    }
+    @media(max-width:800px){
+      #grid{
+        display:block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom: none;
+      }
+    }
+  </style>
 </head>
 <body>
   <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html">코딩</a></li>
-  <li><a href="2.html">운동</a></li>
-  <li><a href="3.html">독서</a></li>
-</ol>
-<h2>운동</h2>
- 방학동안 나는 매일 운동할 것이다.
-
- <p>다음은 운동의 순서와 효능에 관한 이야기다. </p>
-
- <p style="margin-top:45px">먼저, 헬스장에 가서는 제일 먼저 스트레칭을 해야 한다. 근육을 이완시켜줘야하기 때문이다. 그 후부터는 근력운동과 자전거를 번갈아가며 운동한다.
- <br>집으로 돌아와서는, 자기 전에 스트레칭을 한다. <br>꾸준한 운동은 신체 뿐 아니라 뇌 건강에도 매우 좋다. 뿐만아니라 머리도 좋아진다.이것은 연구결과라도 증명되었으니, 못 믿겠으면 사진 밑에 링크를 클릭하라.
-
- <p style="margin-top:45px;"><img src="exercise.jpg" width="100%"></p>
-
- <a href="http://jtbcgolf.joins.com/news/news_view.asp?news_type=24&ns1=15437" title="goodcare" target="_blank">
-   <font size="2">꾸준히 운동하면 머리도 좋아진다.</font>
- </a>
-
- <p style="margin-top:45px">운동을 과하게 하면 다음에 가기 싫어질 수 있으니, 적당한 선에서 꾸준히 하도록 하자. 습관을 기르는 것이 가장 중요할 것이다.</p>
+<div id="grid">
+  <ol>
+    <li><a href="1.html">코딩</a></li>
+    <li><a href="2.html"id="active">운동</a></li>
+    <li><a href="3.html">독서</a></li>
+  </ol>
+  <div id="article">
+      <h2>운동</h2>
+       <p>
+       방학동안 나는 매일 운동할 것이다.
+       다음은 운동의 순서와 효능에 관한 이야기다.
+       먼저, 헬스장에 가서는 제일 먼저 스트레칭을 해야 한다. 근육을 이완시켜줘야하기 때문이다. 그 후부터는 근력운동과 자전거를 번갈아가며 운동한다.
+       집으로 돌아와서는, 자기 전에 스트레칭을 한다. 꾸준한 운동은 신체 뿐 아니라 뇌 건강에도 매우 좋다. 뿐만아니라 머리도 좋아진다.이것은 연구결과라도 증명되었으니, 못 믿겠으면 사진 밑에 링크를 클릭하라.
+       <a href="http://jtbcgolf.joins.com/news/news_view.asp?news_type=24&ns1=15437" title="goodcare" target="_blank">
+       <font size="2">꾸준히 운동하면 머리도 좋아진다.</font>
+       </a>
+       운동을 과하게 하면 다음에 가기 싫어질 수 있으니, 적당한 선에서 꾸준히 하도록 하자. 습관을 기르는 것이 가장 중요할 것이다.
+    </p>
+  </div>
+</div>
 </body>
 </html>
